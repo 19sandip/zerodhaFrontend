@@ -19,7 +19,7 @@ export const AuthProvider = ({ children }) => {
 
   const fetchUserInfo = async (token) => {
     try {
-      const response = await fetch("http://localhost:3004/user", {
+      const response = await fetch("https://zerodhabackend-yx8q.onrender.com/user", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

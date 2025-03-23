@@ -1,6 +1,6 @@
 
  //retrieved
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -23,7 +23,7 @@ function Signup() {
   const handelSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3004/signup", newUser);
+      const res = await axios.post("https://zerodhabackend-yx8q.onrender.com/signup", newUser);
       console.log(res);
       toast.success(res.data.message);
 
