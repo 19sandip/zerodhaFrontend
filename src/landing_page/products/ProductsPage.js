@@ -5,9 +5,6 @@ import LeftSection from "./LeftSection";
 import RightSection from "./RightSection";
 import Universe from "./Universe";
 
-import Navbar from "../Navbar";
-import Footer from "../Footer";
-
 function ProductsPage() {
   let data1 = {
     imageURL:"media/images/kite.png",
