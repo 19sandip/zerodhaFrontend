@@ -19,7 +19,7 @@
     const goToDashboard = (evt) => {
       evt.preventDefault();
       if (isAuthenticated) {
-        window.location.href = "http://localhost:3000/";
+        window.location.href = "https://zeroshadashboard.onrender.com/";
       } else {
         toast.error("Please log in to access the dashboard", {
           position: "top-center",
